@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gbodo Cares Skill Acqusition Program</title>
+<link rel="icon" type="image/png" sizes="56x56" href="gbodo.png">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+<link href="signup.css" rel="stylesheet" />
+<link href="count.css" rel="stylesheet" />
+</head>
+
+<body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<br>
+<br>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card-group mb-0">
+<div class="card p-4">
+<div class="card-body">
+    <img src="gbodo.png" alt="logo" width="30px" height="30px"/>
+<h1>Register</h1>
+<p class="text-muted">Create an account to register for the program</p>
+<div class="input-group mb-3">
+<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+<input type="text" class="form-control" placeholder="Email" id="email">
+</div>
+<div class="input-group mb-4">
+<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+<input type="password" class="form-control" placeholder="Password" id="password">
+</div>
+<div class="row">
+<div class="col-6">
+<button type="button" class="btn  px-4" style="background-color: #8f1f2f; color: #fff;" onclick="signUp()">SignIn</button>
+</div>
+<div class="col-6 text-right">
+<button type="button" style="color:#8f1f2f !important;" class="btn btn-link px-0"><a href="forget.html">Forgot password?</a></button>
+</div>
+</div>
+</div>
+</div>
+<div class="card text-white  py-5 d-md-down-none" style="background-color: #8f1f2f;" >
+<div class="card-body text-center">
+<div>
+<h2>Alredy Registered?</h2>
+<p>Enter your Login details to re-print your acknowledgement slip.</p>
+<input type="email" class="form-control" placeholder="Email" id="emailOther">
+<br>
+<input type="password" class="form-control" placeholder="Password" id="passwordOther">
+<button type="button" class="btn  active mt-3" style="background-color: #000; color: #fff;" id="loginBtn">Print slip</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="countdown-timer">
+    <p class="deadline-label" style="text-align: center; color:#000;">Registration Expires In:</p>
+    <ul class="countdown-timer-ul">
+     
+      <div class="countainer-ul">
+        <li class="date-item"><span class="days">0</span>Days</li>
+        <li class="date-item"><span class="hours">0</span>Hours</li>
+        <li class="date-item"><span class="minutes">0</span>Minutes</li>
+        <li class="date-item"><span class="seconds">0</span>Seconds</li>
+      </div>
+    </ul>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+
+
+<script src="config.js" ></script>
+<script src="signup.js" ></script>
+<script src="reprint.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

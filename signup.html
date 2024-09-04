@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="56x56" href="gbodo.png">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--<link href="displayimg.css" rel="stylesheet" />-->
+
+    <title>GCLC | Register</title>
+    
+</head>
+<body>
+    <div class="allone">
+        <div class="container">
+            <header>GBODO CARES SKILLS ACQUSITION PROGRAM 2024-BATCH B REGISTRATION</header>
+    
+            <form onsubmit="event.preventDefault()">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>First Name</label>
+                                <input type="text" placeholder="Enter your name" required id="firstName">
+                            </div>
+
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Surname</label>
+                                <input type="text" placeholder="Enter your name" required id="surName">
+                            </div>
+    
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required id="dob">
+                            </div>
+    
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Email</label>
+                                <input type="text" placeholder="Enter your email" id="email">
+                            </div>
+    
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Mobile Number</label>
+                                <input type="number" placeholder="Enter mobile number" required id="phone">
+                            </div>
+    
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Gender</label>
+                                <select required id="gender">
+                                    <option disabled selected>Select gender</option>
+                                    <option value="Male">Male</option>
+                                    <option valie="Female">Female</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label><span style="color:#8f1f2f">*</span>Occupation</label>
+                                <input type="text" placeholder="Enter your ccupation" required id="occupation">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="details ID">
+                        
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div> 
+                </div>
+    
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Address Details</span>
+    
+                        <div class="fields">
+    
+                            <div class="input-field">
+                                <label>LCDA/LGA</label>
+                                <input type="text" placeholder="Enter your LGA/LCDA" required id="lga">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Community</label>
+                                <input type="text" placeholder="Enter your community" required id="community">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Home Address</label>
+                                <input type="text" placeholder="Enter block number" required id="address">
+                            </div>
+    
+                            
+                        </div>
+                    </div>
+    
+                    <div class="details family">
+                        <span class="title">Course Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <select required id="firstcourse">
+                                    <option disabled selected>---Choose your first course---</option>
+                                    <option value="Tailoring">Tailoring</option>
+                                    <option value="Make-up">Make-up</option>
+                                    <option value="Hairdressing">Hairdressing</option>
+                                    <option value="Videography">Videography</option>
+                                    <option value="Beadworks">Beadworks</option>
+                                    <option value="Facials & Pedicure">Facials & Pedicure</option>
+                                    <option value="Intro to Web Design">Intro to Web Design</option>
+                                    <option value="Intro to UI/UX Design">Intro to UI/UX Design</option>
+                                    <option value="Backend Development">Backend Development</option>
+                                    <option value="Music Production">Music Production</option>
+                                    <option value="Video Editing">Video Editing</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <select required id="secondcourse">
+                                    <option disabled selected>---Choose your second course---</option>
+                                    <option value="Tailoring">Tailoring</option>
+                                    <option value="Make-up">Make-up</option>
+                                    <option value="Hairdressing">Hairdressing</option>
+                                    <option value="Videography">Videography</option>
+                                    <option value="Beadworks">Beadworks</option>
+                                    <option value="Facials & Pedicure">Facials & Pedicure</option>
+                                    <option value="Intro to Web Design">Intro to Web Design</option>
+                                    <option value="Intro to UI/UX Design">Intro to UI/UX Design</option>
+                                    <option value="Backend Development">Backend Development</option>
+                                    <option value="Music Production">Music Production</option>
+                                    <option value="Video Editing">Video Editing</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <i class="uil uil-navigator"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+                            
+                            <button class="sumbit" onclick="registerMe()">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+    <!--<script src="displayImage.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <!-- sweetalerts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>-->
+
+    <script src="config.js" ></script>
+    <script src="register.js"></script>
+    
+    
+</body>
+</html>

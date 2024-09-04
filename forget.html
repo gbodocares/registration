@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="forget.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div class="form-container">
+        <div class="logo-container">
+            Forgot Password
+        </div>
+
+        <form class="form">
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <button class="form-submit-btn" onclick="forgottenPassword(event)">Send Email</button>
+        </form>
+
+        <p class="signup-link">
+            Remember Password?
+            <a href="index.html" class="signup-link link"> Login Now</a>
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="resetpassword.js"></script>
+</body>
+</html>
