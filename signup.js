@@ -19,7 +19,7 @@ function signUp(){
             icon: "success",
             button: "Proceed to registration"
         }).then(function () {
-            window.location.href = "signup.html"
+            window.location.href = "requirements.html"
         })
     }).catch(error => {
         swal({
