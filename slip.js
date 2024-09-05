@@ -130,26 +130,21 @@ firebase.auth().onAuthStateChanged((user) => {
                                                 <ul>
                                                     <li>Make-up</li>
                                                     <li>Tailoring</li>
-                                                    <li>Hairdressing</li>
-                                                    <li>Beadworks</li>
-                                                    <li>Facials</li>
+                                                    <li>Nails Decoration</li>
                                                 </ul>
                                             </td>
-                                            <td >Mon 9th, Sep 2024</td>
+                                            <td >Mon 16th, Sep 2024</td>
                                             <td >10:00am - 4:00pm</td>
                                         </tr>
 
                                         <tr style=" border: 1px solid #000;">
                                             <td>
                                                 <ul>
-                                                    
-                                                    <li>Photography</li>
                                                     <li>Videography</li>
                                                     <li>Video Editing</li>
-                                                    <li>Intro to Music Production</li>
                                                 </ul>
                                             </td>
-                                            <td>Tue 10th, Sep 2024</td>
+                                            <td>Tue 17th, Sep 2024</td>
                                             <td>10:00am - 4:00pm</td>
                                         </tr>
 
@@ -159,10 +154,9 @@ firebase.auth().onAuthStateChanged((user) => {
                                                     <li>Web Design</li>
                                                     <li>Backend Development</li>
                                                     <li>UI/UX Design</li>
-                                                    <li>Computer Hardware</li>
                                                 </ul>
                                             </td>
-                                            <td>Wed 11th, Sep 2024</td>
+                                            <td>Wed 18th, Sep 2024</td>
                                             <td>10:00am - 4:00pm</td>
                                         </tr>
                                     </table>

@@ -1,4 +1,4 @@
-const expirationDate = 'Sep 10, 2024 23:59:59'; // Define or get your date
+const expirationDate = 'Sep 13, 2024 23:59:59'; // Define or get your date
     let deadlineTime = new Date(expirationDate);
 
     deadlineTime.setDate(deadlineTime.getDate());
