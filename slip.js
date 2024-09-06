@@ -101,7 +101,6 @@ firebase.auth().onAuthStateChanged((user) => {
                            
                         <div class="print">
                             <button type="button" onclick="handlePrint()">Print</button>
-                            <button type="button" onclick="downloadPdf()">Download PDF</button>
                         </div>
                             
                         </div>
