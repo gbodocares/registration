@@ -92,74 +92,7 @@ firebase.auth().onAuthStateChanged((user) => {
                
                 </div>
                 </div>
-                    <div class="total " style="display:flex; flex-direction: column;">
-                        <p class="">
-                            <strong>Please note:</strong><br>
-                            1. Selections will be on first come first serve basis.<br>
-                            2. There are limited number of slots for each course, your final course will depend on the two (2) choices you made.<br>
-                            3. There will be screening for all courses, hence you must bring your acknowledgement slip to the address above for screening.<br>
-                            4. <b style="color: red;">Registration closes on Sunday, 8th, September 2024 11:59pm</b>.<br/>
-                            5. <b style="color: teal;">Screening starts Monday 9th, September 2024 to Wednesday, 11th September 2024. 10:00am - 4:00pm daily</b>
-                            <br>
-                            <br>
-                            <b>Screening Schedule</b>
-                        </p>
-                        
-    
-                        <div>
-                            <table style="width:100%;">
-                                <tr style=" border: 1px solid #000;">
-                                    <th>Courses</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                </tr>
-    
-                                <tr style=" border: 1px solid #000;">
-                                    <td>
-                                        <ul>
-                                            <li>Make-up</li>
-                                            <li>Tailoring</li>
-                                            <li>Nails Decoration</li>
-                                        </ul>
-                                    </td>
-                                    <td >Mon 16th, Sep 2024</td>
-                                    <td >10:00am - 4:00pm</td>
-                                </tr>
-    
-                                <tr style=" border: 1px solid #000;">
-                                    <td>
-                                        <ul>
-                                            <li>Videography</li>
-                                            <li>Video Editing</li>
-                                        </ul>
-                                    </td>
-                                    <td>Tue 17th, Sep 2024</td>
-                                    <td>10:00am - 4:00pm</td>
-                                </tr>
-    
-                                <tr style=" border: 1px solid #000;">
-                                    <td>
-                                        <ul>
-                                            <li>Web Design</li>
-                                            <li>Backend Development</li>
-                                            <li>UI/UX Design</li>
-                                        </ul>
-                                    </td>
-                                    <td>Wed 18th, Sep 2024</td>
-                                    <td>10:00am - 4:00pm</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <br>
-                        <div class="print">
-                            <a href="#" onclick="handlePrint()">
-                            <i class="fa fa-print"></i>
-                            Print Slip
-                            </a>
-
-                             <button type="button" onclick="downloadPDF()">Download PDF</button>
-                        </div>
-                    </div>
+                   
     
                     
                 </div>

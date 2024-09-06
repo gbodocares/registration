@@ -26,15 +26,15 @@ firebase.auth().onAuthStateChanged((user) => {
                         <div class="row">
                         <div class="col-md-12">
                         <div class="invoice-wrapper">
-                        <div class="intro">
-                        <div><img src="gbodo.png" alt="logo" width="50px" height="50px"/></div>
-                        <br>
-                        <b style="font-size: 20px;">Free 3-Month Intensive Skills Acquisition Program 2024 Batch B</b><br>
-                        <b style="font-size: 17px;">Organised By the Gbodo Cares Grassroot Foundation</b><br>
-                        <span style="font-size: 17px;">9, Omilani Street, Ijeshatedo, Surulere Lagos</span><br>
-                         Acknowledgement Slip 
+                        <div class="intro" style="display: flex; column-gap: 10px;">
+                            <div><img src="gbodo.png" alt="logo" width="50px" height="50px"/></div>
+                            <p style="font-size: 20px;">Free 3-Month Intensive Skills Acquisition Program
+                          Organised By the Gbodo Cares Grassroot Foundation</p><br>
+                          
                         </div>
-                        <div class="payment-info">
+                          <span style="font-size: 17px;">9, Omilani Street, Ijeshatedo, Surulere Lagos</span><br>
+                            Acknowledgement Slip 
+                        <div class="payment-info" style="margin-top: -10px;">
                         <div class="row">
                         <div class="col-sm-6">
                         <span>Registration Id:</span>
@@ -46,7 +46,7 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
                         </div>
                         </div>
-                        <div class="payment-details">
+                        <div class="payment-details" style="margin-top: -5px;">
                         <div class="row" >
                         <div class="col-sm-6">
                         <span style="font-weight: bold; color:teal;">Participant Details</span>
@@ -78,7 +78,7 @@ firebase.auth().onAuthStateChanged((user) => {
                         <div class="col-xs-5 text-right" style="color:teal; font-weight:bold;">Choice(s)</div>
                         </div>
                         </div>
-                        <div class="items">
+                        <div class="items" style="margin-top: -10px;">
                         <div class="row item">
                         <div class="col-xs-4 desc" style="font-weight: bold;">
                         ${userData.firstcourse}
@@ -97,81 +97,12 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
                       
                         </div>
-                        <div class="row item">
-                       
-                        
-                       
                         </div>
+                           
+                        <div class="print">
+                            <button type="button" onclick="handlePrint()">Print</button>
+                            <button type="button" onclick="downloadPdf()">Download PDF</button>
                         </div>
-                            <div class="total " style="display:flex; flex-direction: column;">
-                                <p class="">
-                                    <strong>Please note:</strong><br>
-                                    1. Selections will be on first come first serve basis.<br>
-                                    2. There are limited number of slots for each course, your final course will depend on the two (2) choices you made.<br>
-                                    3. There will be screening for all courses, hence you must bring your acknowledgement slip to the address above for screening.<br>
-                                    4. <b style="color: red;">Registration closes on Tuesday, 10th, September 2024 11:59pm</b>.<br/>
-                                    5. <b style="color: teal;">Screening starts Wednesday 11th, September 2024 to Friday, 13th September 2024. 10:00am - 4:00pm daily</b>
-                                    <br>
-                                    <br>
-                                    <b>Screening Schedule</b>
-                                </p>
-                                
-
-                                <div>
-                                    <table style="width:100%;">
-                                        <tr style=" border: 1px solid #000;">
-                                            <th>Courses</th>
-                                            <th>Date</th>
-                                            <th>Time</th>
-                                        </tr>
-
-                                        <tr style=" border: 1px solid #000;">
-                                            <td>
-                                                <ul>
-                                                    <li>Make-up</li>
-                                                    <li>Tailoring</li>
-                                                    <li>Nails Decoration</li>
-                                                </ul>
-                                            </td>
-                                            <td >Mon 16th, Sep 2024</td>
-                                            <td >10:00am - 4:00pm</td>
-                                        </tr>
-
-                                        <tr style=" border: 1px solid #000;">
-                                            <td>
-                                                <ul>
-                                                    <li>Videography</li>
-                                                    <li>Video Editing</li>
-                                                </ul>
-                                            </td>
-                                            <td>Tue 17th, Sep 2024</td>
-                                            <td>10:00am - 4:00pm</td>
-                                        </tr>
-
-                                        <tr style=" border: 1px solid #000;">
-                                            <td>
-                                                <ul>
-                                                    <li>Web Design</li>
-                                                    <li>Backend Development</li>
-                                                    <li>UI/UX Design</li>
-                                                </ul>
-                                            </td>
-                                            <td>Wed 18th, Sep 2024</td>
-                                            <td>10:00am - 4:00pm</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <br>
-                                <div class="print">
-                                    <a href="#" onclick="handlePrint()">
-                                    <i class="fa fa-print"></i>
-                                    Print Slip
-                                    </a>
-
-                                    <button type="button" onclick="downloadPDF()">Download PDF</button>
-                                </div>
-                            </div>
-
                             
                         </div>
                         <div class="footer">
@@ -179,6 +110,8 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
                         </div>
                         </div>
+
+                        
                     </div>`
                     
                 }).join(' ');

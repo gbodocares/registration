@@ -49,9 +49,14 @@ body{
   
   .receipt-content {
     background: #ECEEF4; 
+    height: 100vh;
   }
   @media (min-width: 1200px) {
-    .receipt-content .container {width: 900px; } 
+    .receipt-content .container 
+    {width: 900px;
+
+    
+    } 
   }
   
   .receipt-content .logo {
