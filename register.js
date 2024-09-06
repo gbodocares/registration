@@ -36,9 +36,55 @@ function registerMe(){
             let registrationId = 'GCLC-' + randomNum;
             const today = new Date();
 
-           
+            const ref = firebase.storage().ref();
+            const file = document.getElementById('photo').files[0];
+            const kname = +new Date() + "-" + file.name;
+            const metadata = {
+                contentType: file.type
+            };
         
-            docRef.update({
+            const task = ref.child(kname).put(file, metadata);task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then(url => {
+                console.log(url);
+                // document.querySelector("#image").style.display = 'block';
+                // document.querySelector("#image").src = url;
+        
+                docRef.update({
+                    formData: firebase.firestore.FieldValue.arrayUnion(
+                        {
+                            registrationNo: registrationId,
+                            fisrtname: firstName,
+                            surName: surName,
+                            email: email,
+                            dob: dob,
+                            phone: phone,
+                            gender: gender,
+                            occupation: occupation, 
+                            lga: lga,
+                            community: community,
+                            address: address,
+                            firstcourse: course1,
+                            secondcourse: course2,
+                            imageUrl: url,
+                            created_at: today.getFullYear() + "-" + (today.getMonth() +1) + "-" + today.getDate()
+                        }
+                    )
+                })
+
+
+                swal({
+                    title: "Registration",
+                    text: "Registration Successful",
+                    icon: "success",
+                    button: "See acknowledgement slip"
+                }).then(function () {
+                    window.location.href = "slip.html"
+                })
+                
+            }).catch(console.error);
+        
+            /*docRef.update({
                 formData: firebase.firestore.FieldValue.arrayUnion(
                     {
                         registrationNo: registrationId,
@@ -68,7 +114,7 @@ function registerMe(){
                 button: "See acknowledgement slip"
             }).then(function () {
                 window.location.href = "slip.html"
-            })
+            })*/
              
         } else {
           console.log('User not signed in')

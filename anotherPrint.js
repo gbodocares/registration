@@ -57,7 +57,7 @@ firebase.auth().onAuthStateChanged((user) => {
                 </a>
                 </p>
                 </div>
-                <div><img src="free.png" alt="free" width="150px" height="150px"/></div>
+                 <div><img src="${userData.imageUrl}" alt="free" width="150px" height="150px" style="border: 2px solid #000; border-radius: 4px;"/></div>
                 </div>
                 </div>
                 <div class="line-items">
