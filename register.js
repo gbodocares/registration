@@ -71,8 +71,7 @@ function registerMe(){
                         }
                     )
                 })
-
-
+                
                 swal({
                     title: "Registration",
                     text: "Registration Successful",
