@@ -97,6 +97,53 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
                       
                         </div>
+
+                        <div>
+                        <b><h5>Screening Dates</h5></b>
+                    <table style="width:100%;">
+                        <tr style=" border: 1px solid #000;">
+                            <th>Courses</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+
+                        <tr style=" border: 1px solid #000;">
+                            <td>
+                                <ul>
+                                    <li>Make-up</li>
+                                    <li>Tailoring</li>
+                                    <li>Nails Decoration</li>
+                                </ul>
+                            </td>
+                            <td >Mon 24th, Mar 2025</td>
+                            <td >10:00am - 4:00pm</td>
+                        </tr>
+
+                        <tr style=" border: 1px solid #000;">
+                            <td>
+                                <ul>
+                                    <li>Photography</li>
+                                    <li>Videography</li>
+                                    <li>Video Editing</li>
+                                </ul>
+                            </td>
+                            <td>Tue 25th, Mar 2025</td>
+                            <td>10:00am - 4:00pm</td>
+                        </tr>
+
+                        <tr style=" border: 1px solid #000;">
+                            <td>
+                                <ul>
+                                    <li>Web Design</li>
+                                    <li>Backend Development</li>
+                                    <li>UI/UX Design</li>
+                                </ul>
+                            </td>
+                            <td>Wed 26th, Mar 2025</td>
+                            <td>10:00am - 4:00pm</td>
+                        </tr>
+                    </table>
+                </div>
                         </div>
                            
                         <div class="print">
@@ -111,7 +158,9 @@ firebase.auth().onAuthStateChanged((user) => {
                         </div>
 
                         
-                    </div>`
+                    </div>
+
+                    `
                     
                 }).join(' ');
 
