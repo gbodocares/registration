@@ -135,7 +135,7 @@ firebase.auth().onAuthStateChanged((user) => {
                                 <ol style=" margin-left:-10px; font-weight: bold;">
                                     <li>Make-up</li>
                                     <li>Tailoring</li>
-                                    <li>Nails Decoration</li>
+                                    <li>Nails Decoration/Acrylic Nails</li>
                                 </ol>
                             </td>
                             <td style=" border: 1px solid #000; padding-left: 10px;">Tue 1st, Apr 2025</td>
