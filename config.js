@@ -1,3 +1,4 @@
+//Database for 7th edition batch
 // const firebaseConfig = {
 //   apiKey: "AIzaSyCzeXvcgkgLgQu1Pj2qce4wANvbe7ChWO4",
 //   authDomain: "gclc-eabb4.firebaseapp.com",
