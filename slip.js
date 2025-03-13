@@ -107,7 +107,7 @@ firebase.auth().onAuthStateChanged((user) => {
                         <div>
                         <b><p>Instructions</p></b>
                         <ol>
-                            <li><b>Please ensure you check your course(s) and attend the screening date.</b></li>
+                            <li><b>Please ensure you check your preferred course and attend your first choice screening date.</b></li>
                             <li><b>Please come with your acknowledgement slip to the screening venue.</b></li>
                         </ol>
                         <b><h5>Screening Dates</h5></b>
@@ -121,37 +121,37 @@ firebase.auth().onAuthStateChanged((user) => {
                         <tr style=" border: 1px solid #000;">
                             <td style=" border: 1px solid #000;">
                                 <ol style=" margin-left:-10px; font-weight: bold;">
+                                    <li>Video Editing</li>
+                                    <li>Videography/Photography</li>
+                                </ol>
+                            </td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Mon 31st, Mar 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 2:00pm</td>
+                        </tr>
+
+
+                        <tr style=" border: 1px solid #000;">
+                            <td style=" border: 1px solid #000;">
+                                <ol style=" margin-left:-10px; font-weight: bold;">
                                     <li>Make-up</li>
                                     <li>Tailoring</li>
                                     <li>Nails Decoration</li>
                                 </ol>
                             </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Mon 24th, Mar 2025</td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">10:00am - 4:00pm</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Tue 1st, Apr 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
                         </tr>
 
                         <tr style=" border: 1px solid #000;">
                             <td style=" border: 1px solid #000;">
                                 <ol style=" margin-left:-10px; font-weight: bold;">
-                                    <li>Video Editing</li>
-                                    <li>Videography</li>
-                                    <li>Photography</li>
+                                    <li>Intro to Web Design</li>
+                                    <li>Intro to UI/UX Design</li>
+                                    <li>Intro to Backend Development</li>
                                 </ol>
                             </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Tue 25th, Mar 2025</td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">10:00am - 4:00pm</td>
-                        </tr>
-
-                        <tr style=" border: 1px solid #000;">
-                            <td style=" border: 1px solid #000;">
-                                <ol style=" margin-left:-10px; font-weight: bold;">
-                                    <li>Web Design</li>
-                                    <li>UI/UX DESIGN</li>
-                                    <li>Cyber Security</li>
-                                </ol>
-                            </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Wed 26th, Mar 2025</td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">10:00am - 4:00pm</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Thu 3rd, Apr 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
                         </tr>
                     </table>
                 </div>

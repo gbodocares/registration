@@ -99,6 +99,58 @@ firebase.auth().onAuthStateChanged((user) => {
                             </div>
                           
                             </div>
+
+                             <div>
+                        <b><p>Instructions</p></b>
+                        <ol>
+                            <li><b>Please ensure you check your preferred course and attend your first choice screening date.</b></li>
+                            <li><b>Please come with your acknowledgement slip to the screening venue.</b></li>
+                        </ol>
+                        <b><h5>Screening Dates</h5></b>
+                    <table style="width:100%; ">
+                        <tr style=" border: 1px solid #000;">
+                            <th style=" border: 1px solid #000; padding-left: 10px;">Courses</th>
+                            <th style=" border: 1px solid #000; padding-left: 10px;">Date</th>
+                            <th style=" border: 1px solid #000; padding-left: 10px;">Time</th>
+                        </tr>
+
+                        <tr style=" border: 1px solid #000;">
+                            <td style=" border: 1px solid #000;">
+                                <ol style=" margin-left:-10px; font-weight: bold;">
+                                    <li>Video Editing</li>
+                                    <li>Videography/Photography</li>
+                                </ol>
+                            </td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Mon 31st, Mar 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 2:00pm</td>
+                        </tr>
+
+
+                        <tr style=" border: 1px solid #000;">
+                            <td style=" border: 1px solid #000;">
+                                <ol style=" margin-left:-10px; font-weight: bold;">
+                                    <li>Make-up</li>
+                                    <li>Tailoring</li>
+                                    <li>Nails Decoration</li>
+                                </ol>
+                            </td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Tue 1st, Apr 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
+                        </tr>
+
+                        <tr style=" border: 1px solid #000;">
+                            <td style=" border: 1px solid #000;">
+                                <ol style=" margin-left:-10px; font-weight: bold;">
+                                    <li>Intro to Web Design</li>
+                                    <li>Intro to UI/UX Design</li>
+                                    <li>Intro to Backend Development</li>
+                                </ol>
+                            </td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Thu 3rd, Apr 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
+                        </tr>
+                    </table>
+                </div>
                             </div>
                                
                             <div class="print">
