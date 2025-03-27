@@ -71,6 +71,8 @@ function registerMe(){
                         }
                     )
                 })
+
+               
                 
                 swal({
                     title: "Registration",
