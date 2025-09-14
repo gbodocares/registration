@@ -8,7 +8,7 @@ function signUp(){
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredentials) => {
-    db.collection("students").doc(userCredentials.user.uid).set({
+    db.collection("pre-batch9-students").doc(userCredentials.user.uid).set({
         email: email,
         userId: userCredentials.user.uid,
         created_at: today.getFullYear() + "-" + (today.getMonth() +1) + "-" + today.getDate()

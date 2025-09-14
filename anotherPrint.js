@@ -1,7 +1,7 @@
 firebase.auth().onAuthStateChanged((user) => {
     console.log(user.uid);
     if (user) {
-        var docRef = db.collection("students").doc(user.uid);
+        var docRef = db.collection("pre-batch9-students").doc(user.uid);
         
         docRef.get().then((doc) => {
             //var formDoc = doc.data().formData;
@@ -121,8 +121,8 @@ firebase.auth().onAuthStateChanged((user) => {
                                     <li>Videography/Photography</li>
                                 </ol>
                             </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Mon 31st, Mar 2025</td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 2:00pm</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Thur 25th, Sept 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">10:00am - 4:00pm</td>
                         </tr>
 
 
@@ -134,8 +134,8 @@ firebase.auth().onAuthStateChanged((user) => {
                                     <li>Nails Decoration</li>
                                 </ol>
                             </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Tue 1st, Apr 2025</td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Thur 25th, Sept 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">10:00am - 4:00pm</td>
                         </tr>
 
                         <tr style=" border: 1px solid #000;">
@@ -146,7 +146,7 @@ firebase.auth().onAuthStateChanged((user) => {
                                     <li>Intro to Backend Development</li>
                                 </ol>
                             </td>
-                            <td style=" border: 1px solid #000; padding-left: 10px;">Thu 3rd, Apr 2025</td>
+                            <td style=" border: 1px solid #000; padding-left: 10px;">Fri 26th, Sept 2025</td>
                             <td style=" border: 1px solid #000; padding-left: 10px;">9:00am - 4:00pm</td>
                         </tr>
                     </table>
