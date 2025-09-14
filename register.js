@@ -10,7 +10,7 @@ function registerMe(){
     
 
     firebase.auth().onAuthStateChanged((user) => {
-        var docRef = db.collection("students").doc(user.uid);
+        var docRef = db.collection("pre-batch9-students").doc(user.uid);
         console.log(user.uid);
         
         //let image = file;
