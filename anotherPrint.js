@@ -131,7 +131,7 @@ firebase.auth().onAuthStateChanged((user) => {
                                 <ol style=" margin-left:-10px; font-weight: bold;">
                                     <li>Make-up</li>
                                     <li>Tailoring</li>
-                                    <li>Nails Decoration</li>
+                                    <li>Nails Technology</li>
                                 </ol>
                             </td>
                             <td style=" border: 1px solid #000; padding-left: 10px;">Thur 25th, Sept 2025</td>
@@ -143,7 +143,7 @@ firebase.auth().onAuthStateChanged((user) => {
                                 <ol style=" margin-left:-10px; font-weight: bold;">
                                     <li>Intro to Web Design</li>
                                     <li>Intro to UI/UX Design</li>
-                                    <li>Intro to Backend Development</li>
+                                    <li>Intro to Computer Networking</li>
                                 </ol>
                             </td>
                             <td style=" border: 1px solid #000; padding-left: 10px;">Fri 26th, Sept 2025</td>
