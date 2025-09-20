@@ -73,3 +73,37 @@ p {
     display: flex;
     width: 100%;
 }
+
+@media (max-width: 1000px) {
+    .total-card{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    #signupFormWrapper{
+        max-width: 500px; 
+        margin: auto;
+    }
+}
+
+.total-card{
+    display: flex;
+    flex-direction: column !important;
+}
+
+#signupFormWrapper1{
+    max-width: 400px; 
+    margin: auto;
+}
+
+#signupFormWrapper2{
+    max-width: 400px; 
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    #signupFormWrapper2{
+    max-width: 500px; 
+    margin: auto;
+}
+}

@@ -20,6 +20,46 @@
     <div class="allone">
         <div class="container">
             <div id="loader" class="center"></div>
+            <!-- Spinner -->
+            <div id="spinner">
+            <div class="loadero"></div>
+            </div>
+
+
+            <style>
+            /* Spinner container */
+            #spinner {
+            display: none; /* hidden by default */
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            }
+
+            /* Show spinner only when active */
+            #spinner.active {
+            display: flex;
+            }
+
+            /* Spinner animation */
+            .loadero {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #8f1f2f;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+            </style>
+
+
             <header>GBODO CARES SKILLS ACQUSITION PROGRAM 2025 - 7TH EDITION REGISTRATION</header>
     
             <form onsubmit="event.preventDefault()">
@@ -148,7 +188,7 @@
                                 <span class="btnText">Back</span>
                             </div>
                             
-                            <button class="sumbit" onclick="registerMe()">
+                            <button id="submitBtn" class="sumbit" onclick="registerMe()">
                                 <span class="btnText">Submit</span>
                                 <i class="uil uil-navigator"></i>
                             </button>
