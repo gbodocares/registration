@@ -126,6 +126,15 @@ function registerMe() {
 
             const ref = firebase.storage().ref();
             const file = document.getElementById('photo').files[0];
+            
+            if (!file) {
+                swal("Error", "You must upload a photo of yourself", "error");
+                spinner.classList.remove("active");
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Register";
+                return;
+            }
+
             const kname = +new Date() + "-" + file.name;
             const metadata = { contentType: file.type };
 
@@ -134,6 +143,7 @@ function registerMe() {
             task
                 .then(snapshot => snapshot.ref.getDownloadURL())
                 .then(url => {
+                   
                     return docRef.update({
                         formData: firebase.firestore.FieldValue.arrayUnion({
                             registrationNo: registrationId,
@@ -158,6 +168,8 @@ function registerMe() {
                                 today.getDate(),
                         }),
                     });
+                
+                    
                 })
                 .then(() => {
                     // Hide spinner & enable button
